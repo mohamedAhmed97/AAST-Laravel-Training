@@ -1,0 +1,95 @@
+Laravel Course :
+------------------
+
+Day 1 & 2: (2.5-3) :
+=====================
+1- Intro Backend & laravel 
+2- Laravel Arch
+3- views & DB
+---------------------------------------------------------------------------------
+PHP -> (Backend)  
+---------------------------------------------------------------------------------
+Backend:
+========
+OS -> open source : 
+------------------
+1- python -> django , flesk 
+
+2- php   -> Laravel (com), cake , Zend , symfony  -> "(cms) => wp -> theme , plugins "CPT" "
+
+3- js    -> node (env) ,nestjs 
+
+4-ruby   -> onRails
+---------------------------------------------------------------------------------
+Framework: 
+-----------
+-> software lang -> php , js ,ruby |
+---------------------------------------------------------------------------------
+package -> php -> "Excel" 
+---------------------------------------------------------------------------------
+install laravel:
+----------------
+1-php 
+2- composer -> package management 
+3- npm  
+------------------------------------------------------------------------------------
+run laravel :
+==============
+1- download -> composer 
+2- start command -> php artisan serve
+-------------------------------------------------------------------------------------
+Laravel Arch:
+==============
+- app -> logic code
+- bootstrap -> startup bootstraping 
+- config -> configuration 
+- database -> db
+- public -> "بتطلع للنور"
+- resources -> assets
+- routes -> urls 
+- storage -> store files 
+- tests -> unit test
+- vendor -> cubes => packages 
+
+app - resources
+--------------------------------------------------------------------------------------
+
+routes - "path=>endpoints":
+---------------------------
+- php artisan route:list
+--------------------------------------------------------------------------------------
+Template Engine: 
+================
+html -> R
+show -> R 
+-> html -> component -> functions helper -> condition - loop -> Blade
+---------------------------------------------------------------------------------------
+lab1:
+-----
+1- install and run laravel
+2- install bootstrap
+3- 2 routes (books , newspaper) -> views "masterpage - bootstrap"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
