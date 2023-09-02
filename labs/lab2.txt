@@ -1,0 +1,27 @@
+Laravel Course :
+------------------
+
+Day 2: 
+=====================
+1- DB -> connection 
+2- migration 
+3- Rollback -> back step
+4- ORM
+---------------------------------------------------
+Connection :
+=============
+1- link -> dbname , username , password , host => aws , localhost
+=> config
+
+--------------------------------------------------------------------------
+DB -> books 
+
+--------------------------------------------------------------------------
+lab2 :
+=======
+1- create books table id , name 
+2- sorry i forgot to add price to books 
+3- create newspapers table id , name 
+4- sorry i forgot to add image to books table 
+5- i need to add description to books and newspapers 
+6- i need to drop image from book
