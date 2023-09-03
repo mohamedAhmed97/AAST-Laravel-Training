@@ -1,5 +1,9 @@
 <?php
 
+use App\Http\Controllers\BookController;
+use App\Models\Book;
+use App\Models\User;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,60 +17,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-
-// worst code \-> optimize
-
-// 1- create view 
-// 2- bind data in view 
-
-//books -> hi from books
-Route::get('/books', function () {
-    $books = [
-        [
-            'name' => "Java",
-            'price' => 100
-        ],
-        [
-            'name' => 'OOP',
-            'price' => 80
-        ],
-        [
-            'name' => 'DS',
-            'price' => 120
-        ],
-        [
-            'name' => 'Problem solving',
-            'price' => 80
-        ],
-    ];
-    // "ul books"
-    return view('books', ["books" => $books]);
-});
-
-Route::get('/fruits', function () {
-    $fruits = [
-        [
-            'name' => "apple",
-            'price' => 100
-        ],
-        [
-            'name' => 'watermalon',
-            'price' => 80
-        ],
-        [
-            'name' => 'orange',
-            'price' => 120
-        ],
-        [
-            'name' => 'mango',
-            'price' => 60
-        ],
-    ];
-    return view('test', [
-        "fruits" => $fruits,
-    ]);
-});
-
-Route::get('admin',function(){
-    return view('admin.index');
-});
+// Route::get('books',[BookController::class,'index'])->name("books.index");
+// Route::get('books/create',[BookController::class,'create'])->name("books.create");
+// Route::post('books',[BookController::class,'store'])->name("books.store");
+// Route::get('books/{book}',[BookController::class,'show'])->name("books.show");
+Route::resource('books',BookController::class);

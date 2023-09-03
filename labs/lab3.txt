@@ -1,0 +1,33 @@
+Day 2 & Day 3:
+---------------
+1- ORM
+2- CRUD & Upload file
+3- Validation 
+4- Seeder & Factories
+----------------------------------------------------------------
+ DDL => Create , alter => table -> migration 
+ DML => CRUD -> model
+-----------------------------------------------------------------
+CRUD: 
+-----
+    //model -> orm -> connection type -> compile -> speak -> result                  
+    $book=Book::find(3);
+    $book = book::create([
+        'name' => "cooking 5",
+        'price' => 100,
+        'description' => "aasdasdasdasdsdaisudiashioasdhuiasdhuiasdhuiasdhui"
+    ]);
+    $book = Book::find(4);
+   
+    $book->update([
+        'name' => "OOP 3",
+        'price' => 100,
+    ]);
+    $book=Book::find(1);
+    $book->delete();
+    Book::destroy(6);
+
+---------------------------------------------------------------------------
+lab 3:
+-------
+1- create CRUD for books -> update / delete
