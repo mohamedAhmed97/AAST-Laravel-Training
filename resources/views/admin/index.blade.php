@@ -32,17 +32,17 @@
                 <li class="nav-item dropdown">
                     <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button"
                         data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre="">
-                        {{ Auth::user()->name ?? '-' }}
+                        {{ Auth::user()->user ?? '-' }}
                     </a>
 
                     <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="{{ ('logout') }}"
+                        <a class="dropdown-item" href="{{ 'logout' }}"
                             onclick="event.preventDefault();
                                              document.getElementById('logout-form').submit();">
                             Logout
                         </a>
 
-                        <form id="logout-form" action="{{ ('logout') }}" method="POST" class="d-none">
+                        <form id="logout-form" action="{{ 'logout' }}" method="POST" class="d-none">
                             @csrf
                         </form>
                     </div>
@@ -63,7 +63,7 @@
                     <li class="list-group-item"><a href="#">Create Book</a></li>
                 </ul>
             </div>
-            
+
             <!-- Content area -->
             <div class="col-md-9">
                 @yield('content')
@@ -74,4 +74,3 @@
 </body>
 
 </html>
-

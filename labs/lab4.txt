@@ -1,0 +1,20 @@
+Day 4:
+======
+1- Request & validation  
+2- Auth 
+3- API
+-------------------------------------------------------------------------------
+validation: 
+============
+check data valid or not -> "Restrict user"
+-------------------------------------------------------------------------------
+Auth :
+=======
+1- signin & signup
+-------------------------------------------------------------------------------
+Lab 4:
+=======
+1- add validation for edit book page
+2-install laravel ui --auth 
+3-continue work on books api -> (edit,delete)
+4-make API CRUD for newspaper 
