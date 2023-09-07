@@ -12,8 +12,10 @@
         <thead>
             <tr>
                 <th scope="col">#</th>
+                <th scope="col">Image</th>
                 <th scope="col">name</th>
                 <th scope="col">price</th>
+                <th scope="col">category</th>
                 <th scope="col"> Actions </th>
             </tr>
         </thead>
@@ -21,8 +23,10 @@
             @foreach ($books as $book)
                 <tr>
                     <th scope="row">{{ $book['id'] }}</th>
+                    <td><img height="40px" width="40px" src="{{asset('/storage/'.$book['image'])}}" alt="#"></td>
                     <td>{{ $book['name'] }}</td>
                     <td>{{ $book['price'] }}</td>
+                    <td>{{ $book->category->name }}</td>
                     <td>
                         <a href="{{route("books.show",$book['id'])}}"> <button type="button" class="btn btn-light">View</button></a>
                         <a href="#"> <button type="button" class="btn btn-primary">Edit</button> </a>
@@ -33,4 +37,5 @@
 
         </tbody>
     </table>
+    {{$books->links('pagination::bootstrap-4')}}
 @endsection

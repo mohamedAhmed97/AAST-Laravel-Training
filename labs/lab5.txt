@@ -1,0 +1,50 @@
+Day 5:
+======= 
+- upload file
+- one 2 many
+- filament
+=================================================================================
+upload file:
+=============
+
+books=> add col in migration called image
+
+=============================================
+lab 5: 
+=======
+1- add categories to newspaper & books
+2- upload pic for both
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+==============================================
+  $table->unsignedBigInteger('cat_id')->nullable();
+            $table->foreign('cat_id')
+                ->references('id')->on('categories')
+                ->onDelete('cascade')
+                ->onUpdate('cascade');

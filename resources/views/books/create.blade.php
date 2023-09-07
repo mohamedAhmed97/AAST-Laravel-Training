@@ -15,7 +15,7 @@
                     </ul>
                 </div>
             @endif
-            <form method="POST" action="{{ route('books.store') }}">
+            <form method="POST" enctype="multipart/form-data" action="{{ route('books.store') }}">
                 @csrf
                 <div class="form-group">
                     <label for="exampleNameInput">Name of Book</label>
@@ -30,6 +30,21 @@
                 <div class="form-group">
                     <label for="exampleFormControlTextarea1">Description</label>
                     <textarea class="form-control" name="description" id="exampleFormControlTextarea1" rows="3">{{ old('description') }}</textarea>
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="exampleInputPrice">Categorey</label>
+                    <select class="form-select" name="cat_id" aria-label="Default select example">
+                        <option selected>Open this select menu</option>
+                        @foreach ($categories as $category)
+                            <option value="{{ $category->id }}">{{ $category->name }}</option>
+                        @endforeach
+
+                    </select>
+                </div>
+                <br>
+                <div class="form-group">
+                    <input type="file" name="upload_image" class="form-control" id="customFile" />
                 </div>
                 <br>
                 <button type="submit" class="btn btn-primary">Submit</button>

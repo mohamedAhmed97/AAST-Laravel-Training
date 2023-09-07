@@ -22,7 +22,7 @@ class StoreBookRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'name' => 'min:4|max:12|exists:books,name',
+            'name' => 'min:4|max:12',
             'price' => 'min:1|max:200|decimal:2',
             'description' => 'max:20',
         ];
